@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Callback</title>
+
+</head>
+<body>
+  <header><h1>index</h1></header>
+  <button id="login">login</button>
+  <button id="data">data</button>
+</body>
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<script>
+var $button = $('#login');
+var $data = $('#data');
+var url;
+var data;
+
+$(function (){
+  $.ajax({
+    type: 'GET',
+    url: '/url',
+    success: function(data) {
+      url = data;
+    }
+  })
+});
+$data.on('click', function () {
+ $.ajax({
+    type: 'GET',
+    url: '/token',
+    data: {code: data},
+    success: function(data) {
+    }
+  })
+
+});
+$button.on('click', function (e) {
+  windowThatWasOpened = window.open(url);
+  e.preventDefault();
+});
+window.onmessage = function (e) {
+  if (!e.data.target) {
+    windowThatWasOpened.close();
+    data = e.data.substring(e.data.lastIndexOf('code=') + 5, e.data.lastIndexOf('&scope='));
+  }
+}
+
+</script>
+</html>
