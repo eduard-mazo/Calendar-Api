@@ -1,0 +1,19 @@
+{
+  "name": "calendarapi",
+  "version": "1.0.0",
+  "description": "Play ground Calendar API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/eduard-mazo/Calendar-Api.git"
+  },
+  "author": "eduard.mazo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eduard-mazo/Calendar-Api/issues"
+  },
+  "homepage": "https://github.com/eduard-mazo/Calendar-Api#readme"
+}
