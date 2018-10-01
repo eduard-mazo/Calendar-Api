@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/eduard-mazo/Calendar-Api/issues"
   },
-  "homepage": "https://github.com/eduard-mazo/Calendar-Api#readme"
+  "homepage": "https://github.com/eduard-mazo/Calendar-Api#readme",
+  "dependencies": {
+    "googleapis": "^27.0.0"
+  }
 }

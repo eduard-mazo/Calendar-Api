@@ -1,5 +1,6 @@
 # Created by https://www.gitignore.io/api/node
-
+token.json
+credentials.json
 ### Node ###
 # Logs
 logs
