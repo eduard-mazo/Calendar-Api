@@ -1,0 +1,35 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  text-align: center;
+}
+
+.formButtons {
+  text-align: center;
+  width  : auto;
+  height : auto;
+  margin : 0 auto;
+  border-radius: 5px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.controls button {
+  background-color: #4c90f6;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+ul>li strong {
+  color: red;
+}
+
+ul {
+  list-style:none;
+}
